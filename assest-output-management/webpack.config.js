@@ -18,6 +18,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
+    hot: true
   },
   output: {
     filename: '[name].bundle.js',
@@ -47,7 +48,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Hot module replacement',
     }),
   ],
 };

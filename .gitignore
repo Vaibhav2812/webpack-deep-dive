@@ -2,3 +2,9 @@
 /assest-output-management/dist
 /authoring-library/node_modules
 /authoring-library/dist
+/env-variable/node_modules
+/env-variable/dist
+/webpack-production/node_modules
+/webpack-production/dist
+/typescript/node_modules
+/typescript/dist
