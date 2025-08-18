@@ -8,3 +8,13 @@
 /webpack-production/dist
 /typescript/node_modules
 /typescript/dist
+/udemy/node_modules
+/udemy/dist
+/udemy-code-spliting/node_modules
+/udemy-code-spliting/dist
+/udemy-express-node/node_modules
+/udemy-express-node/dist
+/udemy-module-federation/hello-world/node_modules
+/udemy-module-federation/hello-world/dist
+/udemy-module-federation/kiwi/node_modules
+/udemy-module-federation/kiwi/dist
