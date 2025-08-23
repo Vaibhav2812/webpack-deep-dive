@@ -6,14 +6,6 @@ const heading = new Heading();
 heading.render('Kiwi ');
 kiwiImage.render();
 
-import('HelloWorldApp/HelloWorldButton').then((HelloWorldButtonModule) => {
-  const HelloWorldButton = HelloWorldButtonModule.default;
-  const helloWorldButton = new HelloWorldButton();
-  helloWorldButton.render();
-}).catch((err) => {
-  console.log('Error loading HelloWorldButton:', err);
-})
-
 if (process.env.NODE_ENV === 'production') {
   console.log('Production mode');
 } else if (process.env.NODE_ENV === 'development') {

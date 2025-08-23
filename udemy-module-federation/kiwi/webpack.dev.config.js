@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: ''
+        publicPath: 'http://localhost:9002/'
     },
     mode: 'development', // set mode to development for easier debugging
     devServer: {
@@ -59,9 +59,10 @@ module.exports = {
         }), // generates an HTML file from a template
         new ModuleFederationPlugin({
             name: 'KiwiApp',
-            remotes: {
-                'HelloWorldApp': 'HelloWorldApp@http://localhost:9001/remoteEntry.js'
-            },
+            filename: 'remoteEntry.js',
+            exposes: {
+                './KiwiPage': './src/components/kiwi-page/kiwi-page.js'
+            }
         })
     ]
 }
