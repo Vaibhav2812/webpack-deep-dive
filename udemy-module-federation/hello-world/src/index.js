@@ -3,7 +3,7 @@ import Heading from "./components/heading/heading";
 
 const helloWorldButton = new HelloWorldButton();
 const heading = new Heading();
-heading.render('hello World');
+heading.render('hello World update');
 helloWorldButton.render();
 
 if (process.env.NODE_ENV === 'production') {
